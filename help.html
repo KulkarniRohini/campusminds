@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<script>
+		function init(arg1,arg2){
+		var time = "afternoon";
+		
+			if(time === "morning"){
+				arg1('Good Morning');
+			}else{
+				arg2('Good Evening');
+			}
+		}
+		
+		function successFun(message){
+			alert(message);
+		};
+		function failFun(message){
+			alert(message);
+		};
+		init(successFun,failFun);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<script>
+		function audiPlay(){
+			document.getElementById("audi").play();
+			setInterval(checkAudi, 10);
+		}
+		function audiPause(){
+			document.getElementById("audi").pause();
+		}
+		function checkAudi(){
+			document.getElementById("log").innerHTML = document.getElementById("audi").currentTime+" | Duration is : "+document.getElementById("audi").duration;
+		}
+		function vidStop(){
+			var vid = document.getElementById("audi");
+			vid.currentTime = 0;
+			vid.pause();
+		}
+	</script>
+</head>
+<body>
+	<h1 id="log"></h1>
+	<audio id="audi" controls poster="images/rajani.jpg" >
+		<source src="assets/music.mp3"></source>
+	</audio>
+	<button onclick="audiPlay()">Play</button>
+	<button onclick="audiPause()">Pause</button>
+	<button onclick="audiStop()">Stop</button>
+</body>
+</html>

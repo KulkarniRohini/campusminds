@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Canvas Fun</title>
+	<style>
+		canvas{
+			border: 1px solid red;
+		}
+	</style>
+	<script>
+		window.onload = function(){
+			var ctx = document.getElementById("can").getContext("2d");
+			ctx.canvas.width = 400;
+			ctx.canvas.height = 400;
+			ctx.font = "bold 80px georgia";
+			ctx.lineWidth = 5;
+			// ctx.strokeText("Welcome",10,80);
+			ctx.strokeStyle = "blue";
+			ctx.strokeText("Welcome",10,80);
+			ctx.fillStyle = "gray";
+			ctx.fillText("Welcome",10,80);
+			ctx.fillStyle = "orange";
+			ctx.fillText("Welcome",12,82);
+			// ctx.fillText("vijay",0,0);
+			/*
+			 rotation
+			 translate
+			 scale
+			 */
+		};
+	</script>
+</head>
+<body>
+	<canvas id="can" >Update your browser</canvas>
+</body>
+</html>
